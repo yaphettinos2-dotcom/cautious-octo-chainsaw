@@ -1,0 +1,139 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #f4f4f6;
+    color: #000000;
+}
+
+.page-header {
+    text-align: center;
+    background-color: #0d4f86;
+    color: white;
+}
+
+.page-header h1 {
+    margin: 0;
+    padding: 20px;
+    font-size: 48px;
+    font-weight: bold;
+}
+
+.banner-image {
+    display: block;
+    width: 100%;
+    height: 450px;
+    object-fit: cover;
+}
+
+main {
+    width: 80%;
+    max-width: 960px;
+    margin: 84px auto 74px;
+}
+
+.puppy-gallery {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+.puppy-card,
+.missing-puppy {
+    width: 310px;
+    height: 310px;
+}
+
+.puppy-card img {
+    width: 100%;
+    height: 100%;
+    display: block;
+    object-fit: cover;
+}
+
+.missing-puppy {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(230, 76, 76);
+    text-align: center;
+}
+
+.missing-puppy p {
+    margin: 0;
+    font-size: 48px;
+    line-height: 1.25;
+}
+
+.more-puppies {
+    margin-top: 58px;
+    text-align: center;
+}
+
+.more-puppies h2 {
+    margin: 0 0 64px;
+    font-size: 48px;
+    font-weight: bold;
+}
+
+.puppy-row {
+    display: flex;
+    justify-content: center;
+    gap: 74px;
+}
+
+.puppy-row .puppy-card {
+    width: 445px;
+    height: 535px;
+}
+
+.page-footer {
+    background-color: #0d4f86;
+    color: white;
+    text-align: center;
+    padding: 88px 20px;
+}
+
+.page-footer p {
+    margin: 0;
+    font-size: 36px;
+    font-weight: bold;
+}
+
+@media (max-width: 900px) {
+    main {
+        width: 90%;
+        margin-top: 50px;
+    }
+
+    .page-header h1 {
+        font-size: 36px;
+    }
+
+    .banner-image {
+        height: 320px;
+    }
+
+    .puppy-gallery,
+    .puppy-row {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .puppy-card,
+    .missing-puppy,
+    .puppy-row .puppy-card {
+        width: 100%;
+        max-width: 445px;
+        height: 330px;
+    }
+
+    .missing-puppy p,
+    .more-puppies h2,
+    .page-footer p {
+        font-size: 34px;
+    }
+}
